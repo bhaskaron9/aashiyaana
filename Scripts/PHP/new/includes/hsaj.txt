@@ -1,0 +1,66 @@
+Abstraction
+Types of objcts
+Identificatn of objcts ki kaha visisble honge
+Class diagram-UML
+Whole part relatn(aggregation)
+Composition
+Recursive relations
+Encapsulation
+Interfaces
+Abstract data type
+Class variant
+Interface to ADT n vice versa
+Concrete n abstract classes
+Fir ek flowchart tha sab ka..
+Shared implementation 
+Messages and methods binding kaisi hoti h
+Inheritance
+Indirection
+Polymorphism-syntactic and semantic
+Overloading and overriding
+Dynamic binding
+Reuse by polymorphism
+Use of this ptr http://www.geeksforgeeks.org/this-pointer-in-c/
+Type system-narrowing and widening
+Static n dynamic typing https://pythonconquerstheuniverse.wordpress.com/2009/10/03/static-vs-dynamic-typing-of-programming-languages/
+Strngly n weakly typed
+Or uska ek venn diagram
+
+
+The variant class template is a safe, generic, stack-based discriminated union container, offering a simple solution 
+for manipulating an object from a heterogeneous set of types in a uniform manner. Whereas standard containers such as 
+std::vector may be thought of as "multi-value, single type," variant is "multi-type, single value."
+public Variant(MediaType mediaType,
+               java.util.Locale language,
+               java.lang.String encoding)
+Create a new instance of Variant
+Parameters:
+mediaType - the media type of the variant - may be null
+language - the language of the variant - may be null
+encoding - the content encoding of the variant - may be null
+
+adt
+
+binding operation, its process used to link which method or variable to be called as result of there reference in code. 
+
+Difference between Static and Dynamic binding in Java:
+1) Static binding in Java occurs during Compile time while Dynamic binding occurs during Runtime.
+2) private, final and static methods and variables uses static binding and bonded by compiler while 
+virtual methods are bonded during runtime based upon runtime object.
+3) Static binding uses Type(Class in Java)  information for binding while Dynamic binding uses Object to resolve binding.
+4) Overloaded methods are bonded using static binding while overridden methods are bonded using dynamic binding at runtime. 
+
+In computer programming, indirection is the ability to reference something using a name, reference, or container instead of the value itself. 
+The most common form of indirection is the act of manipulating a value through its memory address. 
+For example, accessing a variable through the use of a pointer. 
+A stored pointer that exists to provide a reference to an object by double indirection is called an indirection node. 
+In some older computer architectures, indirect words supported a variety of more-or-less complicated addressing modes.
+http://docs.oracle.com/cd/B14099_19/web.1012/b15901/mapping008.htm#i1123314
+
+In computer programming, programming languages are often colloquially classified as strongly typed or weakly typed. 
+These terms do not have a precise definition, but in general, a strongly typed language is more likely to generate an error or refuse to compile if the argument
+passed to a function does not closely match the expected type. 
+On the other hand, a very weakly typed language may produce unpredictable results or may perform implicit type conversion.
+A different but related concept is latent typing.
+
+http://beginnersbook.com/2014/01/difference-between-method-overloading-and-overriding-in-java/

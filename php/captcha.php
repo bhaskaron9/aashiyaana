@@ -1,0 +1,28 @@
+<?php
+$image=@imagecreatetruecolor(100,50);
+$background=imagecolorallocate($image,77,77,77);
+imagefill($image,0,0,$background);
+$textcolor=imagecolorallocate($image,255,255,255);
+$linecolor=imagecolorallocate($image,0,0,0);
+for($i=0;$i<6;$i++)
+{
+	imagesetthickness($image,rand(1,4));
+	imageline($image,0,rand(0,50),100,rand(0,50),$linecolor);
+}
+session_start();
+$fonts=array();
+$fonts[]="../fonts/DroidSans-Bold.ttf";
+$fonts[]="../fonts/DroidSans-BoldItalic.ttf";
+$fonts[]="../fonts/DroidSans-Italic.ttf";
+$fonts[]="../fonts/DroidSans-Regular.ttf";
+$digit='';
+for($i=10;$i<=100;$i+=20)
+{
+	$digit.=($num=rand(0,9));
+	imagechar($image,rand(3,5),$i,rand(2,14),$num,$textcolor);
+}
+$_SESSION['digit']=$digit;
+header('Content-type:image/png');
+imagepng($image);
+imagedestroy($image);
+?>

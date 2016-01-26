@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Aashiyana: Pin Your Abode</title>
+
+
+<link rel="shortcut icon" href="images/1.png">
+
+
+<!-- here is the code for popup   -->
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!--   end-->
+
+
+
+<link rel="stylesheet" href="bootstrap-3.3.2/dist/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap-3.3.2/dist/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+.img-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
+    
+    .fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+#grad1 {
+    background: -webkit-linear-gradient(#57D9FF, #FFFFFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#57D9FF, #FFFFFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#57D9FF, #FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#57D9FF, #FFFFFF); /* Standard syntax (must be last) */
+}
+ 
+.fade-in.one { 
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+</style>
+<body>
+<nav class="navbar ">
+    <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><font face="Bradley Hand ITC" size="5" style="font-weight:bold;"><img src="images/1.png" style="height:30px; width:20px; margin-right: 20px;margin-top: 8px; position:absolute;" ><br>&nbsp;&nbsp;&nbsp;ashiyana</font></a>
+            </div>
+            <div>
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home.php" target="myframe">Home</a></li>
+                    <li><a href="about.php" target="myframe">About</a></li>
+                    <li><a href="contact.php" target="myframe">Contact Us</a></li>
+                     <li><a href="new/"target="myframe">Flats</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="sign_up_page.php" target="myframe"> Sign Up</a></li>
+                    <li><a href="login_page.php" target="myframe" >Login</a></li>
+                    <!--<li><a href="#myPopup" data-rel="popup" >Login</a></li> -->
+                </ul>
+            </div>
+        </div>
+   </nav>
+   <header>
+
+
+
+   <div style=" background-color:#57D9FF; height:55px; ">
+    <div  class="img-container" style="height:55px;">
+    	
+   		<a href="buyerfilter/" target="myframe"> <img src="images/1.png" alt="" style="height:25px; width:27px;">
+		<span>
+    		<font face="Bradley Hand ITC" size="2" style="color:black; font-size:25px;">Pin Your Abode</font></a>
+    	</span>
+     	</div>	
+   
+		
+		
+		<div style="height:2000;">
+
+<iframe id="myframe" name ="myframe" width="100%" height="2600" frameborder="0"></iframe>
+</div>
+
+	
+
+
+
+
+					
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+INSERT INTO vendordetails (VendorName,AddressLine1,) VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
